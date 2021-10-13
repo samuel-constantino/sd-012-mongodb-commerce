@@ -5,8 +5,8 @@ db.produtos.updateMany(
   {
     $addToSet: {
       ingredientes: "ketchup",
-    }
-  }
+    },
+  },
 );
 
 db.produtos.find(
@@ -14,6 +14,6 @@ db.produtos.find(
   {
     _id: false,
     nome: true,
-    ingredientes: true
-  }
+    ingredientes: true,
+  },
 );
